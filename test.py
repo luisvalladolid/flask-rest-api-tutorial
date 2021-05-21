@@ -2,8 +2,5 @@ import requests
 
 BASE = "http://127.0.0.1:5000/"
 
-response = requests.put(BASE + "video/1", {"likes": 10, "name": "Luis", "views": 1000000})
-print(response.json())
-input()
-response = requests.get(BASE + "video/1")
+response = requests.patch(BASE + "video/2", {"views": 99, "likes": 100})
 print(response.json())
